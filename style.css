@@ -1,0 +1,432 @@
+/* FONTE DO BODY */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/* FONTE DA LOGO */
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+/* FONTE DOS TITULOS */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.icon1 {
+  border-radius: 50%;
+  /* Torna as imagens redondas */
+  width: 200px;
+  /* Mantém o tamanho consistente */
+  height: 200px;
+  /* Preserva o formato redondo */
+}
+
+:root {
+  --cyan: #BBF5F0;
+  --pink: #D45975;
+  --darker-pink: #B84E65;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h2 {
+  color: var(--pink) !important;
+  font-weight: 600;
+  font-family: "Lilita One", sans-serif;
+  font-size: 64px;
+  margin: 0;
+}
+
+body {
+  margin: 0px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+/*TOPNAV*/
+
+
+nav {
+  text-align: center;
+  height: 60px;
+  background-color: var(--cyan);
+}
+
+nav > ul > * {
+  display: inline;
+}
+
+.links {
+  text-decoration: none;
+  color: var(--pink);
+  font-weight: 600;
+  font-family: "Lilita One", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0 15px;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.links:hover {
+  font-size: 24px;
+  color: var(--darker-pink);
+}
+
+/* .topnav {
+  text-align: center;
+  height: 60px;
+  background-color: #BBF5F0;
+
+}
+
+.topnav>a {
+  text-decoration: none;
+  color: #D45975;
+  font-weight: 600;
+  font-family: "Lilita One", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 15px;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.topnav>a:hover {
+  font-size: 24px;
+  color: #B84E65;
+} */
+
+/*LOGO*/
+.logo {
+  height: 300px;
+  width: 100%;
+  background-color: var(--cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo>h1 {
+  font-family: "Lily Script One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--pink);
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.escorre {
+  animation: linear Scroll;
+  animation-timeline: view(60px);
+}
+
+@keyframes Scroll {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.5;
+  }
+}
+
+/*ICONES*/
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icons>* {
+  margin-left: 10px;
+}
+
+/*MENU*/
+#menu {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+#menu>a {
+  background-color: var(--pink);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#menu>a:hover {
+  background-color: var(--darker-pink);
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.prod {
+  text-align: center;
+
+  padding: 10px;
+}
+
+.prod>img {
+  height: 200px;
+  width: 200px;
+  transition: height 0.3s ease, width 0.3s ease;
+}
+
+.prod:hover img {
+  height: 250px;
+  width: 250px;
+}
+
+/*SOBRE*/
+
+#sobre {
+  width: 100%;
+  background-color: #FBAABB;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.carrossel {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  right: auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.carousel-item img {
+  border-radius: 50%;
+  /* Torna as imagens redondas */
+  width: 200px;
+  /* Mantém o tamanho consistente */
+  height: 200px;
+  /* Preserva o formato redondo */
+}
+
+/* Para evitar quebra de linha */
+.carousel-inner {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrossel-img {
+  margin: 0px;
+  position: relative;
+  left: 35%;
+}
+
+.carousel-item.active {
+  width: 100%;
+  margin: 0px;
+}
+
+.textos {
+  width: 50%;
+  position: relative;
+  margin: 0px;
+  flex-wrap: wrap;
+
+}
+
+.textos h2 {
+  position: static;
+  text-align: center;
+  margin: 0px;
+  line-height: 88.06px;
+}
+
+.textos p {
+  text-align: center;
+  font-size: medium;
+  margin-top: 6px;
+}
+
+#contatos {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+#contatos iframe {
+  padding: 15px;
+}
+
+#contatos>p {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 6px;
+}
+
+.redessociais>a {
+  padding: 15px;
+}
+
+.rede:hover .icone-rede {
+  width: 60px;
+  height: 60px;
+}
+
+.icone-rede {
+  width: 50px;
+  height: 50px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.maps {
+  height: 400px;
+  width: 700px;
+}
+
+footer {
+  height: 100px;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+  .topnav {
+    font-size: 18px;
+    /* Reduzir o tamanho do texto */
+  }
+
+  .logo {
+    height: 200px;
+    /* Menor altura para telas menores */
+  }
+
+  .logo h1 {
+    font-size: 60px;
+    /* Reduzir o tamanho do texto */
+  }
+
+  .icons {
+    flex-direction: column;
+    /* Coloca ícones em coluna para telas menores */
+  }
+
+  .icons img {
+    width: 50px;
+    /* Imagens menores para telas menores */
+  }
+
+
+  .textos h2 {
+    font-size: 40px;
+    /* Reduzir o tamanho do texto */
+    padding-top: 10px;
+    /* Reduzir o preenchimento */
+  }
+
+  .textos p {
+    /* Reduzir o tamanho do texto */
+    margin: 20px;
+    /* Menor margem para telas menores */
+  }
+
+  .carrossel {
+    width: 100%;
+    /* O carrossel ocupa toda a largura */
+  }
+
+  .carrossel-img {
+    width: 150px;
+    /* Reduzir tamanho das imagens para telas menores */
+    height: 150px;
+  }
+
+  .carousel-inner {
+    padding-top: 10px;
+    /* Reduzir o espaçamento superior */
+  }
+}
+
+/* Responsividade para telas menores que 600px */
+@media (max-width: 600px) {
+  .topnav {
+    font-size: 16px;
+    /* Reduzir ainda mais o tamanho do texto */
+  }
+
+  .logo {
+    height: 100px;
+    /* Menor altura para telas pequenas */
+  }
+
+  .logo h1 {
+    font-size: 50px;
+    /* Reduzir ainda mais o tamanho do texto */
+  }
+
+  .icons img {
+    width: 40px;
+    /* Imagens menores para telas menores */
+  }
+
+  .textos {
+    text-align: left;
+    /* Ajusta o alinhamento para telas menores */
+  }
+
+  .textos h2 {
+    font-size: 30px;
+    /* Reduzir ainda mais o tamanho do texto */
+  }
+
+  .textos p {
+    /* Menor tamanho para telas pequenas */
+    margin: 10px;
+    /* Menor margem para telas menores */
+  }
+
+  .carrossel {
+    flex-direction: column;
+    /* Carrossel se ajusta em tela menor */
+    align-items: center;
+    /* Centra o conteúdo para melhor visualização */
+    justify-content: center;
+  }
+
+  .carrossel-img {
+    width: 100px;
+    /* Imagens menores para telas pequenas */
+    height: 100px;
+  }
+
+  .carousel-inner {
+    padding-top: 5px;
+    /* Reduzir o espaçamento superior */
+  }
+}
