@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link class="icon1" rel="shortcut icon" type="imagex/png" href="./images/icone.jpg">
+  <link class="icon1" rel="shortcut icon" type="imagex/png" href="./images/logo-icon.jpg">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Messias Cake's</title>
   <script src="script.js"></script>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- COISAS RELACIONADAS AO BOOTSTRAP -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <!-- JavaScript do Bootstrap -->
+  <!-- /COISAS RELACIONADAS AO BOOTSTRAP -->
 </head>
 <body>
-
-  
   <header>
     <!-- Começo da barra de navegação -->
     <nav>
@@ -29,18 +28,18 @@
 
     <!-- Começo da logo da loja e da imagem de glacê azul -->
     <div class="logo-header"><h1 class="logo">Messias Cake's</h1></div>
-    <img src="images/banner-escorrendo.png" alt="" width="100%" class="escorre">
+    <img src="images/glace-header.png" alt="" width="100%" class="escorre">
     <!-- Fim da logo da loja e da imagem de glacê azul -->
 
     <!-- Começo dos icones com texto -->
     <div class="icones-header">
       <ul>
         <li>Youre on the test branch~</li>
-        <li><img src="images/presente.png" alt="Icone representando um presente."></li>
+        <li><img class="icon-header" src="images/icone-header-presente.png" alt="Icone representando um presente."></li>
         <li>Doces para presentear quem ama!</li>
-        <li><img src="images/mundo.png" alt="Icone representando uma localização em um globo."></li>
+        <li><img class="icon-header" src="images/icone-header-mundo.png" alt="Icone representando uma localização em um globo."></li>
         <li>Atendemos toda região metropolitana!</li>
-        <li><img src="images/bolo.png" alt="Icone representando um bolo de aniversário"></li>
+        <li><img class="icon-header" src="images/icone-header-bolo.png" alt="Icone representando um bolo de aniversário"></li>
         <li>Bolos personalizados para festejar!</li>
       </ul>
     </div>
@@ -74,72 +73,62 @@
       </div>
       <a href="https://www.instagram.com/messiascakess_/">VER MAIS</a>
     </section>
+    <img src="images/glace-sobre-top.png" width="100%">
     <section id="sobre">
-
-      
-    </section>
-  </main>
-
-  
- 
-
- <img src="images/ondula1.png" width="100%"> 
-  <div id="sobre">
-    <div class="carrossel">
-      <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img-produtos/brigadeiros3.png" alt="Imagem 1" class="carrossel-img">
+      <div class="carrossel">
+        <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img-produtos/brigadeiros3.png" alt="Imagem 1" class="carrossel-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img-produtos/brigadeiros1.png" alt="Imagem 2" class="carrossel-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img-produtos/bolin1.png" alt="Imagem 3" class="carrossel-img">
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="img-produtos/brigadeiros1.png" alt="Imagem 2" class="carrossel-img">
-          </div>
-          <div class="carousel-item">
-            <img src="img-produtos/bolin1.png" alt="Imagem 3" class="carrossel-img">
-          </div>
+
+          <!-- Controles para navegar entre os itens -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
         </div>
 
-        <!-- Controles para navegar entre os itens -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
       </div>
-
-    </div>
-    <div class="textos">
-      <h2>SOBRE</h2>
-      <p>texto texto texto texto texto texto texto texto texto
-        texto texto texto texto texto texto texto texto texto
-        texto texto texto texto texto texto texto texto texto
-        texto texto texto texto texto texto texto texto texto
-        texto texto texto texto texto texto texto texto
-        texto texto texto texto texto texto texto
-      </p>
-    </div>
-  </div>
-  <img src="images/ondula2.png" alt="" width="100%">
-
-  <div id="contatos">
-    <h2>CONTATOS</h2>
-    <p>Localização da loja</p>
-    <div class="mapa">
-      <iframe class="maps"
-        src="https://maps.google.com/maps?width=600&height=600&hl=pt-br&q=Rua%20Silverio%20Manoel%20da%20Silva%2C%20160%2C%20Colinas%2C%20Cachoeirinha%2C%20RS%2C%20Brasil%2094935-630&ie=UTF8&t=&z=16&iwloc=B&output=embed"
-        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-    </div>
-    <p>Faça seu pedido através de nossas redes sociais!</p>
-    <div class="redessociais">
-      <a class="rede" href="#Facebook"><img class="icone-rede" src="images/icone facebook.png" alt=""></a>
-      <a class="rede" href=" https://ig.me/m/messiascakess_"><img class="icone-rede" src="images/icone instagram.png" alt=""></a>
-      <a class="rede" href="https://wa.me/5551989159939?text=Tenho%20interesse%20em%20realizar%20uma%20encomenda!"><img class="icone-rede" src="images/icone zap.png" alt=""></a>
-
-    </div>
-  </div>
+      <div class="textos">
+        <h2>UM POUCO SOBRE NÓS!</h2>
+        <p>texto texto texto texto texto texto texto texto texto
+          texto texto texto texto texto texto texto texto texto
+          texto texto texto texto texto texto texto texto texto
+          texto texto texto texto texto texto texto texto texto
+          texto texto texto texto texto texto texto texto
+          texto texto texto texto texto texto texto
+        </p>
+      </div>
+    </section>
+    <img src="images/glace-sobre-bottom.png" width="100%">
+    <section id="contatos">
+      <h2>ENTRE EM CONTATOS POR NOSSAS REDES SOCIAIS!</h2>
+      <p>Localização da loja</p>
+      <div class="mapa">
+        <iframe class="maps"
+          src="https://maps.google.com/maps?width=600&height=600&hl=pt-br&q=Rua%20Silverio%20Manoel%20da%20Silva%2C%20160%2C%20Colinas%2C%20Cachoeirinha%2C%20RS%2C%20Brasil%2094935-630&ie=UTF8&t=&z=16&iwloc=B&output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
+      <p>Faça seu pedido através de nossas redes sociais!</p>
+      <div class="redessociais">
+        <a class="rede" href="#Facebook"><img class="icone-rede" src="images/icone facebook.png" alt=""></a>
+        <a class="rede" href=" https://ig.me/m/messiascakess_"><img class="icone-rede" src="images/icone instagram.png" alt=""></a>
+        <a class="rede" href="https://wa.me/5551989159939?text=Tenho%20interesse%20em%20realizar%20uma%20encomenda!"><img class="icone-rede" src="images/icone zap.png" alt=""></a>
+      </div>
+    </section>
+  </main>
   <footer></footer>
 </body>
 </html>
