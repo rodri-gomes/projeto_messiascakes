@@ -93,10 +93,6 @@ nav > ul > * {
   padding: 0;
   z-index: 1;
 }
-.escorre {
-  animation: linear Scroll;
-  animation-timeline: view(60px);
-}
 
   /*ICONES*/
 .icones-header {
@@ -241,11 +237,6 @@ nav > ul > * {
 }
 
 /* FIM DA SEÇÃO MAIN */
-
-@keyframes Scroll {
-  from {scale: 1;}
-  to {scale: 1.5;}
-}
 
 @media (max-width: 780px) {
   .icones-header > * {
