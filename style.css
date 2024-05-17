@@ -40,12 +40,18 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
 ul {
   list-style-type: none;
-  margin: 0;
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
 }
 /*TOPNAV*/
-
+header {
+  height: 100dvh;
+  width: 100%;
+}
 
 nav {
   text-align: center;
@@ -98,7 +104,7 @@ nav > ul > * {
 } */
 
 /*LOGO*/
-.logo {
+.logo-header {
   height: 300px;
   width: 100%;
   background-color: var(--cyan);
@@ -107,12 +113,19 @@ nav > ul > * {
   align-items: center;
 }
 
-.logo>h1 {
+.logo-header .logo {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.logo {
   font-family: "Lily Script One", system-ui;
   font-weight: 400;
   font-style: normal;
   color: var(--pink);
-  font-size: 100px;
+  font-size: 7rem;
   margin: 0;
   padding: 0;
   z-index: 1;
@@ -133,17 +146,29 @@ nav > ul > * {
   }
 }
 
+
 /*ICONES*/
-.icons {
+
+.icones-header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  min-width: fit-content;
 }
 
-.icons>* {
-  margin-left: 10px;
+.icones-header > * {
+  display: inherit;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
+
+.icones-header li {
+  margin-left: 15px;
+}
+
+
 
 /*MENU*/
 #menu {
@@ -315,118 +340,77 @@ footer {
   height: 100px;
 }
 
-/* Responsividade para telas menores que 768px */
-@media (max-width: 768px) {
-  .topnav {
-    font-size: 18px;
-    /* Reduzir o tamanho do texto */
-  }
-
-  .logo {
-    height: 200px;
-    /* Menor altura para telas menores */
-  }
-
-  .logo h1 {
-    font-size: 60px;
-    /* Reduzir o tamanho do texto */
-  }
-
-  .icons {
-    flex-direction: column;
-    /* Coloca ícones em coluna para telas menores */
-  }
-
-  .icons img {
-    width: 50px;
-    /* Imagens menores para telas menores */
-  }
-
-
-  .textos h2 {
-    font-size: 40px;
-    /* Reduzir o tamanho do texto */
-    padding-top: 10px;
-    /* Reduzir o preenchimento */
-  }
-
-  .textos p {
-    /* Reduzir o tamanho do texto */
-    margin: 20px;
-    /* Menor margem para telas menores */
-  }
-
-  .carrossel {
-    width: 100%;
-    /* O carrossel ocupa toda a largura */
-  }
-
-  .carrossel-img {
-    width: 150px;
-    /* Reduzir tamanho das imagens para telas menores */
-    height: 150px;
-  }
-
-  .carousel-inner {
-    padding-top: 10px;
-    /* Reduzir o espaçamento superior */
+@media (max-width: 750px) {
+  .icones-header > * {
+    flex-flow: column wrap;
   }
 }
-
-/* Responsividade para telas menores que 600px */
+/* @media (max-width: 768px) {
+  .topnav {
+    font-size: 18px;
+  }
+  .logo {
+    height: 200px;
+  }
+  .logo h1 {
+    font-size: 60px;
+  }
+  .icons {
+    flex-direction: column;
+  }
+  .icons img {
+    width: 50px;
+  }
+  .textos h2 {
+    font-size: 40px;
+    padding-top: 10px;
+  }
+  .textos p {
+    margin: 20px;
+  }
+  .carrossel {
+    width: 100%;
+  }
+  .carrossel-img {
+    width: 150px;
+    height: 150px;
+  }
+  .carousel-inner {
+    padding-top: 10px;
+  }
+}
 @media (max-width: 600px) {
   .topnav {
     font-size: 16px;
-    /* Reduzir ainda mais o tamanho do texto */
   }
-
   .logo {
     height: 100px;
-    /* Menor altura para telas pequenas */
   }
-
   .logo h1 {
     font-size: 50px;
-    /* Reduzir ainda mais o tamanho do texto */
   }
-
   .icons img {
     width: 40px;
-    /* Imagens menores para telas menores */
   }
-
   .textos {
     text-align: left;
-    /* Ajusta o alinhamento para telas menores */
   }
-
   .textos h2 {
     font-size: 30px;
-    /* Reduzir ainda mais o tamanho do texto */
   }
-
   .textos p {
-    /* Menor tamanho para telas pequenas */
     margin: 10px;
-    /* Menor margem para telas menores */
   }
-
   .carrossel {
     flex-direction: column;
-    /* Carrossel se ajusta em tela menor */
     align-items: center;
-    /* Centra o conteúdo para melhor visualização */
     justify-content: center;
   }
-
   .carrossel-img {
     width: 100px;
-    /* Imagens menores para telas pequenas */
     height: 100px;
   }
-
   .carousel-inner {
     padding-top: 5px;
-    /* Reduzir o espaçamento superior */
   }
-}
+} */
