@@ -237,7 +237,16 @@ nav > ul > * {
 }
 
 /* FIM DA SEÇÃO MAIN */
-
+@media (min-width: 992px) {
+  .escorre {
+    animation: linear Scroll;
+    animation-timeline: view(60px);
+  }
+  @keyframes Scroll {
+    from {scale: 1;}
+    to {scale: 1.5;}
+  }
+}
 @media (max-width: 780px) {
   .icones-header > * {
     flex-flow: column wrap;
