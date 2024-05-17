@@ -39,7 +39,6 @@ ul {
   padding: 0; 
   margin: 0; 
 }
-
 /* COMEÇO DA SEÇÃO DO HEADER */
   /*TOPNAV*/
 header {
@@ -95,18 +94,9 @@ nav > ul > * {
   z-index: 1;
 }
 .escorre {
+  pointer-events: none;
   animation: linear Scroll;
   animation-timeline: view(60px);
-}
-
-@keyframes Scroll {
-  from {
-    scale: 1;
-  }
-
-  to {
-    scale: 1.5;
-  }
 }
 
   /*ICONES*/
@@ -177,66 +167,42 @@ nav > ul > * {
 }
 
   /*SOBRE*/
+
 #sobre {
   width: 100%;
-  background-color: #FBAABB;
-  margin-top: -20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
-.carrossel {
-  height: 100%;
-  width: 50%;
-  position: relative;
-  right: auto;
-  display: block;
+#sobre > *:not(img) {
+  background-color: #FBAABB;
+}
+.grid-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   align-items: center;
-  justify-content: center;
-
+}
+.carousel {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .carousel-item img {
   border-radius: 50%;
-  /* Torna as imagens redondas */
-  width: 200px;
-  /* Mantém o tamanho consistente */
-  height: 200px;
-  /* Preserva o formato redondo */
-}
-.carousel-inner {
-  margin: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.carrossel-img {
-  margin: 0px;
-  position: relative;
-  left: 35%;
-}
-.carousel-item.active {
-  width: 100%;
-  margin: 0px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 .textos {
-  width: 50%;
-  position: relative;
-  margin: 0px;
-  flex-wrap: wrap;
-
+  text-align: center;
+  margin: 0 auto;
 }
 .textos h2 {
-  position: static;
-  text-align: center;
-  margin: 0px;
-  line-height: 88.06px;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 .textos p {
-  text-align: center;
-  font-size: medium;
-  margin-top: 6px;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0;
 }
 
   /* CONTATOS E LOCALIZAÇÃO */
@@ -273,77 +239,33 @@ nav > ul > * {
 
 /* FIM DA SEÇÃO MAIN */
 
-@media (max-width: 750px) {
+@keyframes Scroll {
+  from {scale: 1;}
+  to {scale: 1.5;}
+}
+
+@media (max-width: 780px) {
   .icones-header > * {
     flex-flow: column wrap;
   }
-}
-/* @media (max-width: 768px) {
-  .topnav {
-    font-size: 18px;
+  .grid-group {
+    grid-template-columns: 1fr;
   }
-  .logo {
-    height: 200px;
-  }
-  .logo h1 {
-    font-size: 60px;
-  }
-  .icons {
-    flex-direction: column;
-  }
-  .icons img {
-    width: 50px;
-  }
-  .textos h2 {
-    font-size: 40px;
-    padding-top: 10px;
-  }
-  .textos p {
-    margin: 20px;
-  }
-  .carrossel {
-    width: 100%;
-  }
-  .carrossel-img {
-    width: 150px;
-    height: 150px;
-  }
-  .carousel-inner {
-    padding-top: 10px;
-  }
-}
-@media (max-width: 600px) {
-  .topnav {
-    font-size: 16px;
-  }
-  .logo {
-    height: 100px;
-  }
-  .logo h1 {
-    font-size: 50px;
-  }
-  .icons img {
-    width: 40px;
-  }
+  .carousel,
   .textos {
-    text-align: left;
+    max-width: 100%;
   }
-  .textos h2 {
-    font-size: 30px;
+  .maps {
+    width: 600px;
   }
-  .textos p {
-    margin: 10px;
+}
+@media (max-width: 680px) {
+  .maps {
+    width: fit-content;
   }
-  .carrossel {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+@media (max-width: 420px) {
+  .logo {
+    font-size: 4rem;
   }
-  .carrossel-img {
-    width: 100px;
-    height: 100px;
-  }
-  .carousel-inner {
-    padding-top: 5px;
-  }
-} */
+}
