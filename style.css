@@ -94,7 +94,6 @@ nav > ul > * {
   z-index: 1;
 }
 .escorre {
-  pointer-events: none;
   animation: linear Scroll;
   animation-timeline: view(60px);
 }
@@ -173,6 +172,10 @@ nav > ul > * {
 }
 #sobre > *:not(img) {
   background-color: #FBAABB;
+}
+.glace-sobre,
+.escorre {
+  pointer-events: none;
 }
 .grid-group {
   display: grid;
