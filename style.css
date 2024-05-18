@@ -187,11 +187,15 @@ nav > ul > * {
   max-width: 600px;
   margin: 0 auto;
 }
+.carousel-item {
+  height: 400px;
+}
 .carousel-item img {
   border-radius: 50%;
   width: 300px;
   height: 300px;
   object-fit: cover;
+  box-shadow: 20px 23px 2px -3px #D45975;
 }
 .textos {
   text-align: center;
