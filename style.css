@@ -200,6 +200,7 @@ nav > ul > * {
 .textos {
   text-align: center;
   margin: 0 auto;
+  
 }
 .textos h2 {
   font-size: 2em;
@@ -208,7 +209,8 @@ nav > ul > * {
 .textos p {
   font-size: 1em;
   line-height: 1.5;
-  margin: 0;
+  margin: 5px;
+  
 }
 
   /* CONTATOS E LOCALIZAÇÃO */
@@ -242,7 +244,10 @@ nav > ul > * {
   width: 700px;
   padding: 15px;
 }
-
+.escorre-2 {
+  display: none;
+  pointer-events: none;
+}
 /* FIM DA SEÇÃO MAIN */
 @media (min-width: 992px) {
   .escorre {
@@ -257,6 +262,16 @@ nav > ul > * {
 @media (max-width: 780px) {
   .icones-header > * {
     flex-flow: column wrap;
+    background-color: var(--cyan);
+    width: 100%;
+    margin: 0;
+  }
+  .escorre {
+    display: none;
+  }
+  .escorre-2 {
+    display: block;
+    margin: 0;
   }
   .grid-group {
     grid-template-columns: 1fr;
