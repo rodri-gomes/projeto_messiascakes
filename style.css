@@ -291,6 +291,6 @@ nav > ul > * {
 }
 @media (max-width: 420px) {
   .logo {
-    font-size: 4rem;
+    font-size: 5.5rem;
   }
 }
