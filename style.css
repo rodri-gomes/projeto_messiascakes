@@ -8,6 +8,7 @@
 /* CONFIGURAÇÕES GERAIS DO HTML */
 :root {
   --cyan: #BBF5F0;
+  --darker-cyan: #86F3E7;
   --pink: #D45975;
   --darker-pink: #B84E65;
 }
@@ -161,7 +162,8 @@ nav > ul > * {
   transition: background-color 0.3s ease;
 }
 #menu>a:hover {
-  background-color: var(--darker-pink);
+  background-color: var(--darker-cyan);
+  color: var(--pink);
 }
 
   /*SOBRE*/
