@@ -63,24 +63,33 @@ nav {
   background-color: var(--cyan);
 }
 
-nav>ul>* {
-  display: inline;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
 }
 
 .links {
-  text-decoration: none;
-  color: var(--pink);
   font-weight: 600;
   font-family: "Lilita One", sans-serif;
+  text-decoration: none;
+  color: var(--pink);
   font-style: normal;
   font-size: 20px;
   margin: 0 15px;
-  transition: color 0.3s ease, font-size 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
 }
 
 .links:hover {
-  font-size: 24px;
   color: var(--darker-pink);
+  transform: translateY(-0.25em);
 }
 
 /*LOGO*/
