@@ -32,8 +32,8 @@ footer {
 
 h2 {
   color: var(--pink) !important;
-  font-weight: 600;
-  font-family: "Lilita One", sans-serif;
+  /* font-weight: 600;
+  font-family: "Lilita One", sans-serif; */
   font-size: 64px;
   margin: 0;
   text-align: center;
@@ -63,24 +63,31 @@ nav {
   background-color: var(--cyan);
 }
 
-nav>ul>* {
-  display: inline;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
 }
 
 .links {
   text-decoration: none;
   color: var(--pink);
-  font-weight: 600;
-  font-family: "Lilita One", sans-serif;
   font-style: normal;
   font-size: 20px;
   margin: 0 15px;
-  transition: color 0.3s ease, font-size 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
 }
 
 .links:hover {
-  font-size: 24px;
   color: var(--darker-pink);
+  transform: translateY(-0.25em);
 }
 
 /*LOGO*/
@@ -109,6 +116,7 @@ nav>ul>* {
   margin: 0;
   padding: 0;
   z-index: 1;
+  text-shadow: 8px 2px 13px rgba(184, 78, 101, 0.35);
 }
 
 /*ICONES*/
@@ -154,17 +162,28 @@ nav>ul>* {
   margin-bottom: 15px;
 }
 
+.menu h2 {
+  font-family: "Merriweather", serif;
+}
+
 .menu .item {
   width: 350px;
   min-height: fit-content;
   text-align: center;
   padding: 10px;
+  box-sizing: border-box;
+}
+
+.item ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 .item .produto {
   width: 200px;
   height: 200px;
   transition: height 0.3s ease, width 0.3s ease;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .produto:hover {
@@ -172,7 +191,8 @@ nav>ul>* {
   height: 250px;
 }
 
-#menu>a {
+.vermais-button {
+  display: inline-block;
   background-color: var(--pink);
   border: none;
   color: white;
@@ -181,13 +201,16 @@ nav>ul>* {
   font-size: 1.2rem;
   font-weight: 600;
   border-radius: 20px;
+  margin-top: 20px;
   transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-#menu>a:hover {
+.vermais-button:hover {
   background-color: var(--darker-cyan);
   color: var(--pink);
 }
+
 
 /*SOBRE*/
 
@@ -236,8 +259,10 @@ nav>ul>* {
 }
 
 .textos h2 {
-  font-size: 2em;
+  font-size: 4em;
   margin-bottom: 20px;
+  font-family: "Lily Script One", system-ui;
+  text-shadow: 8px 2px 13px rgba(184, 78, 101, 0.35);
 }
 
 .textos p {
@@ -251,6 +276,13 @@ nav>ul>* {
 #contatos {
   width: 100%;
   text-align: center;
+}
+
+#contatos h2 {
+  font-weight: 600;
+  font-family: "Lilita One", sans-serif;
+  font-size: 4em;
+  text-shadow: 8px 2px 13px rgba(184, 78, 101, 0.35);
 }
 
 #contatos p {
@@ -298,10 +330,12 @@ nav>ul>* {
   width: 700px;
   padding: 15px;
 }
+
 iframe {
   border: none;
   border-radius: 50px;
 }
+
 .escorre-2 {
   display: none;
   pointer-events: none;
