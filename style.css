@@ -249,7 +249,7 @@ nav ul li {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  box-shadow: -23px 10px 7px 0px var(--darker-pink);
+  box-shadow: 23px 10px 7px 0px var(--darker-pink);
 }
 
 .textos {
@@ -346,6 +346,10 @@ iframe {
   .escorre {
     animation: linear Scroll;
     animation-timeline: view(60px);
+  }
+
+  .carousel-item img {
+    box-shadow: -23px 10px 7px 0px var(--darker-pink);
   }
 
   @keyframes Scroll {
