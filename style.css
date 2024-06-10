@@ -135,6 +135,14 @@ nav ul li {
   justify-content: center;
 }
 
+.icones-header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
 .icones-header li {
   margin-left: 15px;
 }
