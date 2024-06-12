@@ -126,6 +126,7 @@ nav ul li {
   justify-content: center;
   flex-wrap: wrap;
   min-width: fit-content;
+  background-color: var(--cyan);
 }
 
 .icones-header>* {
