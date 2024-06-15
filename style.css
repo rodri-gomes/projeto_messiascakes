@@ -126,7 +126,7 @@ nav ul li {
   justify-content: center;
   flex-wrap: wrap;
   min-width: fit-content;
-  background-color: var(--cyan);
+
 }
 
 .icones-header>* {
@@ -373,6 +373,9 @@ iframe {
 }
 
 @media (max-width: 780px) {
+  .icones-header {
+    background-color: var(--cyan);
+  }
   .icones-header>* {
     flex-flow: column wrap;
     background-color: var(--cyan);
